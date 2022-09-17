@@ -1,0 +1,295 @@
+
+/* колір основного тексту #212121 */
+/* додатковий колір сірий #757575 */
+/* колір лого синій #2196F3 чорний #000000 */
+/* акцент і емейл #2196F3 */
+/* білий колір */
+/* Боді білий #F5F5F5 */
+/* Другий колір фона світло сірий #F5F4FA */
+/* focus колір #2196F3  */
+
+:root {
+    --background-color: #FFFFFF;
+    --color-logo-black: #000000;
+    --primary-color-text: #212121;
+    --accent-color: #2196F3;
+    --button-color-active: #188CE8;
+    --second-color: #757575;
+    --white-color-text: #FFFFFF;
+    --backgraund-color-button: #F5F4FA;
+    --background-hero: #2F303A;
+    --background-our-team: #F5F4FA;
+    --addres-footer: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Боді */
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color-text);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/* Чи не забагато тепер властивостей? */
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    margin: -1px;
+}
+
+
+/* Лого */
+
+.logo {
+    color: var(--color-logo-black);
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo-blue {
+    color: var(--accent-color);
+}
+
+
+/* Сайт nav */
+
+.site-nav .list {
+    list-style: none;
+}
+
+.site-nav .menu {
+    background-color: var(--white-color-text);
+    color: var(--primary-color-text);
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .menu:focus,
+.site-nav .menu:hover {
+    color: var(--accent-color);
+}
+
+.site-nav .menu.current {
+    color: var(--accent-color);
+}
+
+.contact .list {
+    list-style: none;
+}
+
+.contact .link {
+    background-color: var(--white-color-text);
+    color: var(--second-color);
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.contact .link:focus,
+.contact .link:hover {
+    color: var(--accent-color);
+}
+
+/* index.html */
+
+/* Герой */
+
+.hero {
+    background-color: var(--background-hero);
+    text-align: center;
+}
+
+.hero .main-title {
+    text-transform: uppercase;
+    color: var(--white-color-text);
+
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+}
+
+/* Button */
+
+.hero .order {
+    background-color: var(--accent-color);
+    color: var(--white-color-text);
+    border-color: transparent;
+    font-family: inherit;
+    cursor: pointer;
+
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.hero .order:hover,
+.hero .order:focus {
+    background-color: var(--button-color-active);
+    color: var(--white-color-text);
+}
+
+/* Секція feature-list */
+
+.feature-list .list {
+    list-style: none;
+}
+
+.feature-list .feature-title  {
+    text-transform: uppercase;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+}
+
+.feature-list .text {
+    color: var(--second-color);
+
+    font-size: 14px;
+    line-height: 1.71;
+
+}
+
+/* Секція section-work */
+
+.section-work .list {
+    list-style: none;
+}
+
+/*  h2 для section-work і our-team */
+
+.section-work .title,
+.our-team .title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+/* Секція our-team*/
+
+.our-team {
+    background-color: var(--background-our-team);
+}
+
+.our-team .list {
+    list-style: none;
+    background-color: var(--background-color);
+}
+
+.our-team .team {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+}
+
+.our-team .team-profession {
+    color: var(--second-color);
+
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+
+/* Футер */
+
+.footer-bottom {
+    background-color: var(--background-hero);
+}
+
+.footer-bottom .logo {
+    color: var(--white-color-text);
+}
+
+.address-company .list {
+    list-style: none;
+}
+
+.address-company .link {
+    text-decoration: none;
+    color: var(--addres-footer);
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.address-company .map {
+    color: var(--white-color-text);
+}
+
+.address-company .link:hover,
+.address-company .link:focus {
+    color: var(--accent-color);
+}
+
+/*  */
+/* portfolio.html */
+/*  */
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.projects .button {
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--primary-color-text);
+    background-color: var(--backgraund-color-button);
+    border-radius: 4px;
+    border-color: transparent;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+.projects .button:focus,
+.projects .button:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color-text);
+}
+
+
+.projects .name-project {
+    color: var(--primary-color-text);
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects .type-project {
+    color: var(--second-color);
+
+    font-size: 16px;
+    line-height: 1.87;
+}
