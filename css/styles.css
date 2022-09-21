@@ -36,11 +36,36 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 ul,
 li {
     margin: 0px;
     padding: 0px;
+    padding-left: 0px;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    background-color: var(--background-color);
+    width: 1200px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    outline: 2px solid tomato;
 }
 
 
@@ -63,12 +88,15 @@ li {
 .logo {
     color: var(--color-logo-black);
     font-family: Raleway, sans-serif;
-    text-decoration: none;
 
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo-blue {
@@ -78,15 +106,6 @@ li {
 
 /* Сайт nav */
 
-.container {
-    background-color: var(--background-color);
-    width: 1170px;
-    margin: 0 auto;
-    margin-left: 15px;
-    margin-right: 15px;
-    outline: 2px solid tomato;
-}
-
 .site-nav .list {
     list-style: none;
 }
@@ -94,7 +113,6 @@ li {
 .site-nav .menu {
     background-color: var(--white-color-text);
     color: var(--primary-color-text);
-    text-decoration: none;
 
     font-size: 14px;
     font-weight: 500;
@@ -118,7 +136,6 @@ li {
 .contact .link {
     background-color: var(--white-color-text);
     color: var(--second-color);
-    text-decoration: none;
 
     font-size: 14px;
     font-weight: 500;
@@ -137,8 +154,6 @@ li {
 .hero {
     background-color: var(--background-hero);
     text-align: center;
-
-    outline: 2px solid tomato;
 }
 
 .hero .container {
@@ -158,6 +173,8 @@ li {
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    max-width: 696px;
+    margin: auto;
 
     margin-bottom: 30px;
 }
@@ -169,7 +186,6 @@ li {
     color: var(--white-color-text);
     border: none;
     font-family: inherit;
-    cursor: pointer;
 
     border-radius: 4px;
     font-size: 16px;
@@ -191,18 +207,14 @@ li {
 
 /* Секція feature-list */
 
-.feature-list,
-.section-work,
-.our-team,
-.projects {
+.section-padding {
     padding-bottom: 94px;
-}
-
-.feature-list,
-.our-team {
     padding-top: 94px;
 }
 
+.section-work {
+    padding-bottom: 94px;
+}
 
 .feature-list .list {
     list-style: none;
@@ -240,7 +252,7 @@ li {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.16;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 
@@ -293,7 +305,6 @@ li {
 }
 
 .address-company .link {
-    text-decoration: none;
     color: var(--addres-footer);
 
     font-style: normal;
@@ -319,12 +330,7 @@ li {
     list-style: none;
 }
 
-.link {
-    text-decoration: none;
-}
-
 .projects .button {
-    cursor: pointer;
     font-family: inherit;
     color: var(--primary-color-text);
     background-color: var(--backgraund-color-button);
@@ -336,6 +342,11 @@ li {
     letter-spacing: 0.03em;
 
     padding: 6px 22px;
+}
+
+
+.projects .filter {
+    margin-bottom: 50px;
 }
 
 .projects .button.all {
@@ -362,17 +373,16 @@ li {
 
 .projects .type-project {
     color: var(--second-color);
-
     font-size: 16px;
     line-height: 1.87;
-
-    padding-bottom: 20px;
 }
 
 .projects .list {
     margin-bottom: 34px;
 }
 
-.projects .image {
-    margin-bottom: 20px;
+.projects .date-project {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
