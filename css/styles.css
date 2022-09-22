@@ -21,6 +21,7 @@
     --background-our-team: #F5F4FA;
     --addres-footer: rgba(255, 255, 255, 0.6);
     --border-filter: #EEEEEE;
+    --border-header: #ECECEC;
 }
 
 
@@ -118,6 +119,7 @@ img {
 .container.main-nav {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid var(--border-header);
 }
 
 .site-nav {
