@@ -34,6 +34,10 @@ body {
     letter-spacing: 0.03em;
 }
 
+header {
+    border-bottom: 1px solid var(--border-header);
+}
+
 h1,
 h2,
 h3,
@@ -71,7 +75,6 @@ img {
 }
 
 .container {
-    background-color: var(--background-color);
     width: 1200px;
     margin: 0 auto;
     padding-right: 15px;
@@ -97,9 +100,6 @@ img {
 
 .logo {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
     color: var(--color-logo-black);
     font-family: Raleway, sans-serif;
 
@@ -107,6 +107,12 @@ img {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+
+.main-nav .logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo-blue {
@@ -119,7 +125,6 @@ img {
 .container.main-nav {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--border-header);
 }
 
 .site-nav {
@@ -195,16 +200,16 @@ img {
 .hero {
     background-color: var(--background-hero);
     text-align: center;
-}
 
-.hero .container {
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
 .hero .container {
-    background-color: var(--background-hero);
+
 }
+
+
 
 .hero .main-title {
     margin: auto;
@@ -235,8 +240,7 @@ img {
     letter-spacing: 0.06em;
 
     display: inline-block;
-    min-width: 216px;
-    min-height: 50px;
+    padding: 10px 32px;
 }
 
 .hero .order:hover,
@@ -247,7 +251,7 @@ img {
 
 /* Секція feature-list */
 
-.section-padding {
+.feature-list {
     padding-bottom: 94px;
     padding-top: 94px;
 }
@@ -293,7 +297,7 @@ img {
 
 .section-work .title,
 .our-team .title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
     text-align: center;
     font-size: 36px;
@@ -304,17 +308,18 @@ img {
 
 /* Секція our-team*/
 
-.our-team,
-.our-team .container {
+.our-team  {
     background-color: var(--background-our-team);
+    padding-top: 94px;
+    padding-bottom: 94px;
+
 }
 
 .our-team .item {
     background-color: var(--background-color);
     display: block;
-    width: 270px;
     text-align: center;
-
+    width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -338,34 +343,31 @@ img {
 
     font-size: 16px;
     line-height: 1.18;
-
-    padding-bottom: 30px;
 }
 
-.our-team .image {
-    margin-bottom: 30px;
+.our-team .content {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
 /* Футер */
 
 .footer-bottom .logo {
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 
     color: var(--white-color-text);
 }
 
-.footer-bottom .list {
-    padding-bottom: 60px;
-}
-
 .footer-bottom .item + .item {
-    padding-top: 9px;
+    margin-top: 9px;
 }
 
-.footer-bottom {
+footer {
     background-color: var(--background-hero);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 }
 
 .address-company .link {
@@ -427,6 +429,11 @@ img {
     margin-bottom: 4px;
 }
 
+.projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .projects .type-project {
     color: var(--second-color);
     font-size: 16px;
@@ -441,6 +448,10 @@ img {
 }
 
 .projects .date-project {
+    border-left: 1px solid var(--border-filter);
+    border-right: 1px solid var(--border-filter);
+    border-bottom: 1px solid var(--border-filter);
+
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -449,7 +460,6 @@ img {
 
 .projects .item {
     display: flex;
-    border: 1px solid var(--border-filter);
     margin-left: 0px;
     margin-right: 0px;
     width: 370px;
