@@ -453,8 +453,7 @@ footer {
     padding-bottom: 20px;
 }
 
-
-.projects .item {
+/* .projects .item {
     display: flex;
     margin-left: 0px;
     margin-right: 0px;
@@ -465,4 +464,18 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+} */
+
+.projects .list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.projects .item {
+    display: flex;
+    flex-basis: calc((100%) / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
 }
