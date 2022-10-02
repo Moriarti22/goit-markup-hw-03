@@ -230,6 +230,7 @@ img {
     font-family: inherit;
 
     border-radius: 4px;
+    border-color: transparent;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
@@ -395,6 +396,7 @@ footer {
     color: var(--primary-color-text);
     background-color: var(--backgraund-color-button);
     border-radius: 4px;
+    border-color: transparent;
     border: none;
 
     font-size: 16px;
